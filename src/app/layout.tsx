@@ -11,7 +11,6 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: 'LibraryVault - Library Management API',
   description: 'A free, open-source API for building library management UIs without a backend server. Perfect for prototyping and testing with role-based access control.',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
@@ -49,7 +48,7 @@ export default function RootLayout({
               <Link href="/docs" className="text-sm text-muted-foreground hover:text-foreground transition">
                 Docs
               </Link>
-              <a href="https://github.com/yourusername/libraryvault" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/MabelSamuel/Library-Vault" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" size="sm">
                   GitHub
                 </Button>
