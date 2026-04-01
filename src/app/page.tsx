@@ -8,8 +8,8 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-4 py-20">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-6 inline-block px-4 py-2 bg-accent/10 border border-accent/20 rounded-full">
-            <span className="text-sm font-semibold text-accent">
+          <div className="mb-6 inline-block px-4 py-2 bg-chart-1/10 border border-chart-1/20 rounded-full">
+            <span className="text-sm font-semibold text-chart-1">
               Open Source • Forever Free
             </span>
           </div>
@@ -32,7 +32,7 @@ export default function HomePage() {
               </Button>
             </Link>
             <a
-              href="https://github.com/yourusername/libraryvault"
+              href="https://github.com/MabelSamuel/Library-Vault"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -357,14 +357,14 @@ const { data } = await booksRes.json();`}</code>
               </Button>
             </Link>
             <a
-              href="https://github.com/yourusername/libraryvault"
+              href="https://github.com/MabelSamuel/Library-Vault"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Button
                 size="lg"
                 variant="outline"
-                className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10"
+                className="border-primary-foreground text-black bg-accent hover:bg-primary-foreground/10"
               >
                 Star on GitHub
               </Button>
