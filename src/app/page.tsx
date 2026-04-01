@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
+import { BASE_URL } from "@/lib/config";
 
 export default function HomePage() {
   return (
@@ -190,7 +191,7 @@ export default function HomePage() {
           <Card className="border border-border p-6 mb-8 bg-slate-900 text-white">
             <pre className="font-mono text-sm overflow-x-auto">
               <code>{`// Login to get a token
-const res = await fetch('https://api.libraryvault.dev/auth/login', {
+const res = await fetch(\`${BASE_URL}/auth/login\`, {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({
@@ -202,7 +203,7 @@ const res = await fetch('https://api.libraryvault.dev/auth/login', {
 const { token } = await res.json();
 
 // Fetch books
-const booksRes = await fetch('https://api.libraryvault.dev/books', {
+const booksRes = await fetch(\`${BASE_URL}/books\', {
   headers: { 'Authorization': \`Bearer \${token}\` }
 });
 
@@ -215,9 +216,7 @@ const { data } = await booksRes.json();`}</code>
               <div className="text-sm font-semibold text-primary mb-1">
                 Base URL
               </div>
-              <code className="text-sm font-mono break-all">
-                https://api.libraryvault.dev
-              </code>
+              <code className="text-sm font-mono break-all">{BASE_URL}</code>
             </div>
             <div className="bg-card border border-border rounded-lg p-4">
               <div className="text-sm font-semibold text-primary mb-1">
