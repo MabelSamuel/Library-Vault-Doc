@@ -8,7 +8,7 @@ export default function DocsLayout({
   return (
     <div className="flex gap-8 min-h-screen">
       {/* Sidebar Navigation */}
-      <aside className="w-64 border-r border-border pt-6 hidden lg:block sticky top-0 h-screen overflow-y-auto">
+      <aside className="w-64 border-r border-border hidden lg:block sticky top-0 h-screen overflow-y-auto">
         <SidebarNav />
       </aside>
 
